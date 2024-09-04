@@ -13,7 +13,7 @@
   <!-- Basic Page Needs
   ================================================== -->
   <meta charset="utf-8">
-  <title>Aviato | E-commerce template</title>
+  <title>Inclusive Perk</title>
 
   <!-- Mobile Specific Metas
   ================================================== -->
@@ -82,6 +82,7 @@
 				<div class="col-md-4 col-xs-12 col-sm-4">
 					
 					<!-- Cart -->
+					 <!-- 2e has visibile focus state -->
 					<ul class="top-menu text-right list-inline">
 						<li>
 							<p><a href="index.html">Home</a></p>
@@ -94,6 +95,9 @@
 						</li>
 						<li>
 							<p><a href="blog-single.html">Sources</a></p>
+						</li>
+						<li>
+							<p><a href="exercises.html">Exercises</a></p>
 						</li>
 						<li class="dropdown cart-nav dropdown-slide">
 							<a href="#!" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -148,148 +152,58 @@
 	</section><!-- End Top Header Bar -->
 
 
-
-<div class="page-wrapper">
-  <div class="cart shopping">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <div class="block">
-            <div class="product-list">
-              <form method="post">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th class="">Item Name</th>
-                      <th class="">Item Price</th>
-                      <th class="">Actions</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="">
-                      <td class="">
-                        <div class="product-info">
-                          <img width="80" src="https://images.pexels.com/photos/4195601/pexels-photo-4195601.jpeg?auto=compress&cs=tinysrgb&w=200" alt="" />
-                          <a href="#!">Americano</a>
-                        </div>
-                      </td>
-                      <td class="">$2.00</td>
-                      <td class="">
-                        <a class="product-remove" href="#!">Remove</a>
-                      </td>
-                    </tr>
-                    <tr class="">
-                      <td class="">
-                        <div class="product-info">
-                          <img width="80" src="https://images.pexels.com/photos/4195601/pexels-photo-4195601.jpeg?auto=compress&cs=tinysrgb&w=200" alt="" />
-                          <a href="#!">Sandwhich</a>
-                        </div>
-                      </td>
-                      <td class="">$20.00</td>
-                      <td class="">
-                        <a class="product-remove" href="#!">Remove</a>
-                      </td>
-                    </tr>
-                    <tr class="">
-                      <td class="">
-                        <div class="product-info">
-                          <img width="80" src="https://images.pexels.com/photos/4195601/pexels-photo-4195601.jpeg?auto=compress&cs=tinysrgb&w=200" alt="" />
-                          <a href="#!">Diet Coke</a>
-                        </div>
-                      </td>
-                      <td class="">$8.00</td>
-                      <td class="">
-                        <a class="product-remove" href="#!">Remove</a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-                <a href="checkout.html" class="btn btn-main pull-right">Checkout</a>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
+    <body>
+   <div class="container mt-5">
+    <div class="instructions">
+		<h4> Exercise 1: Keyboard Accessibility</h4>
+        <h2>Instructions</h2>
+        <p>Use your keyboard to interact with the webpage.</p>
+        <ul>
+            <li>1. Identify the keyboard accessibility issues</li>
+            <li>2. Fix the issues in the HTML and/or CSS</li>
+            <li>3. Retest with your keyboard</li>
+            <li>4. See if you can find all 6 issues!</li>
+        </ul>
+        <p class="listexercise">Learn more: <a href="https://dequeuniversity.com/class/input-methods2/keyboard-input/" target="_blank">On Deque University: Keyboard Input</a></p>
     </div>
-  </div>
+
+	<hr>
+    <h1 tabindex="0" class="mt-5">Keyboard Accessibility Gone Wrong! Summit</h1>
+
+    <h2 tabindex="0">Day 1 Agenda</h2>
+    <p tabindex="0">On day one, we will learn what it is like to navigate a website using only your keyboard. Then we will experience both good and bad websites.</p>
+    <p tabindex="0">Joe Smith from <a href="#" class="link1">Ye Olde A11y Tavern</a> will be your host.</p>
+    <p tabindex="0">Be sure to download the required files ahead of time:</p>
+    
+    <!-- Button with Bootstrap class -->
+    <button class="btn btn-primary" onclick="javascript:alert('Thanks for downloading your files!')">Download Files</button>
+
+    <h2 tabindex="0" class="mt-4">Day 2 Agenda</h2>
+    <p tabindex="0">On day two, we will mess around with a little code in the morning.</p>
+    <p tabindex="0">Lunch will be hosted at <a href="https://www.deque.com" class="btn-link" target="_blank">Ye Olde A11y Tavern</a>.</p>
+    <p tabindex="0">In the afternoon, we will take a tour of the A11y Bros Brewing facility and have a deep discussion on the hottest new topic in accessibility: “Button vs Link”.</p>
+
+    <h2 tabindex="0" class="mt-4">Register Now!</h2>
+
+    <!-- Bootstrap form fields -->
+    <form>
+        <div class="form-group">
+            <label for="firstname">First name:</label>
+            <input type="text" class="form-control" name="firstname" id="firstname" tabindex="1">
+        </div>
+
+        <div class="form-group">
+            <label for="lastname">Last name:</label>
+            <input type="text" class="form-control" name="lastname" id="lastname" tabindex="2">
+        </div>
+
+        <div class="form-group">
+            <label for="cc">Credit Card #:</label>
+            <input type="text" class="form-control" name="cc" id="cc" tabindex="3">
+        </div>
+
+        <!-- Button with proper tabindex -->
+        <button class="btn btn-success" tabindex="4" onclick="javascript:alert('Thanks for registering!')">Submit</button>
+    </form>
 </div>
-
-
-<footer class="footer section text-center">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<ul class="social-media">
-					<li>
-						<a href="https://www.facebook.com/themefisher">
-							<i class="tf-ion-social-facebook"></i>
-						</a>
-					</li>
-					<li>
-						<a href="https://www.instagram.com/themefisher">
-							<i class="tf-ion-social-instagram"></i>
-						</a>
-					</li>
-					<li>
-						<a href="https://www.twitter.com/themefisher">
-							<i class="tf-ion-social-twitter"></i>
-						</a>
-					</li>
-					<li>
-						<a href="https://www.pinterest.com/themefisher/">
-							<i class="tf-ion-social-pinterest"></i>
-						</a>
-					</li>
-				</ul>
-				<ul class="footer-menu text-uppercase">
-					<li>
-						<a href="contact.html">CONTACT</a>
-					</li>
-					<li>
-						<a href="shop.html">SHOP</a>
-					</li>
-					<li>
-						<a href="pricing.html">Pricing</a>
-					</li>
-					<li>
-						<a href="contact.html">PRIVACY POLICY</a>
-					</li>
-				</ul>
-				<p class="copyright-text">Copyright &copy;2021, Designed &amp; Developed by <a href="https://themefisher.com/">Themefisher</a></p>
-			</div>
-		</div>
-	</div>
-</footer>
-
-    <!-- 
-    Essential Scripts
-    =====================================-->
-    
-    <!-- Main jQuery -->
-    <script src="plugins/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap 3.1 -->
-    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-    <!-- Bootstrap Touchpin -->
-    <script src="plugins/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
-    <!-- Instagram Feed Js -->
-    <script src="plugins/instafeed/instafeed.min.js"></script>
-    <!-- Video Lightbox Plugin -->
-    <script src="plugins/ekko-lightbox/dist/ekko-lightbox.min.js"></script>
-    <!-- Count Down Js -->
-    <script src="plugins/syo-timer/build/jquery.syotimer.min.js"></script>
-
-    <!-- slick Carousel -->
-    <script src="plugins/slick/slick.min.js"></script>
-    <script src="plugins/slick/slick-animation.min.js"></script>
-
-    <!-- Google Mapl -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
-    <script type="text/javascript" src="plugins/google-map/gmap.js"></script>
-
-    <!-- Main Js File -->
-    <script src="js/script.js"></script>
-    
-
-
-  </body>
-  </html>
+</HTML>

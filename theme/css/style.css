@@ -2460,3 +2460,15 @@ img {
   height: auto;
   display: block;
 }
+
+.image-container img {
+  width:40%;
+}
+
+.listexercise a {
+  color:blue;
+}
+
+.card  {
+  padding: 20px !important;
+}
